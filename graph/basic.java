@@ -24,5 +24,21 @@ public class basic {
             }
             System.out.println();
         }
+
+        // DFS traversal
+        boolean[] visited = new boolean[n];
+        System.out.print("DFS traversal starting from 0: ");
+        dfs(graph, 0, visited);
+        System.out.println();
+    }
+
+    public static void dfs(ArrayList<ArrayList<Integer>> graph, int node, boolean[] visited) {
+        visited[node] = true;
+        System.out.print(node + " ");
+        for (int neighbor : graph.get(node)) {
+            if (!visited[neighbor]) {
+                dfs(graph, neighbor, visited);
+            }
+        }
     }
 }
