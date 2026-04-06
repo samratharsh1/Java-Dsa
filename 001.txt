@@ -1,0 +1,15 @@
+Here are the concise steps to push updates to GitHub:
+
+Edit your files locally. // Apne local files ko edit karo, jaise VS Code mein, phir save karo.
+
+Stage changes: git add . // Changes ko stage karne ke liye, git add . command run karo.
+
+Commit: git commit -m "Your message" // Commit karo with a message, git commit -m "Your message" command use karo.
+
+Push: git push // GitHub pe push karo, git push command run karo.
+
+If on a new branch: git push -u origin <branch-name> (first time only). // Naye branch pe pehli baar push karte waqt yeh use karo, 
+
+git push -u origin <branch-name> command.
+
+Check git status anytime for current state. // Kabhi bhi git status check karo, git status command run karo, pata chalega kya haal hai.
